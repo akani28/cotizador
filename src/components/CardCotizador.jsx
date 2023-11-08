@@ -2,8 +2,8 @@ import React from 'react'
 
 const CardCotizador = () => {
   return (
-    <main className='capitalize'>
-        <section>
+    <main className='capitalize w-[400px] p-4 font-bold flex flex-col gap-4'>
+        <section className='flex justify-between border-[2px] p-4'>
             <div>
                 <p>Empresa:</p>
                 <p>Contacto:</p>
@@ -16,11 +16,10 @@ const CardCotizador = () => {
                 <p>fecha:</p>
             </div>
         </section>
-        <section>
+        <section className='border-[2px] p-4'>
             <p>Rango de temperaturas</p>
             <p>tipo</p>
-            <p>ancho</p>
-            <p>largo</p>
+            <p>dimensiones</p>
             <p>espesor</p>
             <p>hoja</p>
             <p>bisagras</p>
