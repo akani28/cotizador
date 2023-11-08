@@ -1,33 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import CardCotizador from './components/CardCotizador'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <h3>Cotizador de puertas</h3>
+    <form>
+      <section>
+      <label htmlFor="puertas">Seleccione el tipo de puerta</label>
+      <select name="puertas" id="puertas">
+        <option value="Sobrepuesta abatible escotilla refrigeracion 66MM">Sobrepuesta abatible escotilla refrigeracion 66MM</option>
+        <option value="Sobrepuesta abatible escotilla congelacion mediaTemp 92MM">Sobrepuesta abatible escotilla congelacion mediaTemp 92MM</option>
+        <option value="Sobrepuesta abatible escotilla congelacion baja temp">Sobrepuesta abatible escotilla congelacion baja temp</option>
+      </select>
+
+      </section>
+      
+
+    </form>
+    <CardCotizador/>
+      
     </>
   )
 }
